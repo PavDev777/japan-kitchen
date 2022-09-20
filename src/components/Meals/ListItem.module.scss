@@ -1,0 +1,22 @@
+.listItem {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.listItemSingle {
+  display: grid;
+  row-gap: 10px;
+  border-bottom: 1px solid #bbbbbb;
+
+  span {
+    font-style: italic;
+  }
+}
+
+.listItemPrice {
+  color: #6f6335;
+  font-weight: bold;
+  font-size: 18px;
+}
