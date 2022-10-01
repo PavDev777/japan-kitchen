@@ -1,11 +1,12 @@
 import { CartContext } from "./cartContext";
 import { useReducer } from "react";
+import { totalCartPriceFunc } from "../utils";
 
 const getStorageItems = localStorage.getItem("items");
 
 const initialValue = {
   items: JSON.parse(getStorageItems) || [],
-  totalCartPrice: 0,
+  totalCartPrice: totalCartPriceFunc(getStorageItems) || 0,
 };
 
 const cartReducer = (state, action) => {
@@ -57,6 +58,7 @@ const cartReducer = (state, action) => {
         updatedItems = state.items.filter(
           (item) => item.id !== action.payload.id
         );
+        localStorage.removeItem("items");
       } else {
         const updatedItem = {
           ...existingCartItem,
@@ -65,6 +67,7 @@ const cartReducer = (state, action) => {
         updatedItems = [...state.items];
         updatedItems[existingCartIndexItem] = updatedItem;
       }
+      localStorage.setItem("items", JSON.stringify(updatedItems));
       return {
         items: updatedItems,
         totalCartPrice,
