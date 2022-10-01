@@ -27,3 +27,36 @@
   }
 }
 
+@media (max-width: 768px) {
+  .header {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .image {
+    img {
+      transform: rotateZ(0deg) translateY(0rem) translateX(0rem);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .image {
+    img {
+      transform: rotateZ(0deg) translateY(0rem) translateX(0rem);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    flex-direction: column;
+    padding: 5px 10%;
+  }
+}
+

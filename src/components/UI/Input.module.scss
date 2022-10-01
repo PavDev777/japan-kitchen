@@ -11,3 +11,13 @@
 .inputForm {
   width: 50px;
 }
+
+.invalidFromData {
+  border-color: #ff0000;
+}
+
+@media (max-width: 768px) {
+  .input {
+    justify-content: center;
+  }
+}

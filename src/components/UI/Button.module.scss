@@ -16,3 +16,20 @@
     transform: translateY(3px);
   }
 }
+
+.closeButton {
+  background-color: transparent;
+  border: 1px solid #6f6335;
+  color: #6f6335;
+
+  &:hover {
+    background-color: transparent;
+    color: darken(#6f6335, 10%);
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    height: 8vh;
+  }
+}

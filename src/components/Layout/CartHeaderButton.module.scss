@@ -25,3 +25,39 @@
   padding: 3px 15px;
   border-radius: 10px;
 }
+
+.anima {
+  animation: anima 300ms ease-out;
+}
+
+@keyframes anima {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    column-gap: 20px;
+    padding: 4px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    column-gap: 10px;
+    padding: 4px 14px;
+  }
+}

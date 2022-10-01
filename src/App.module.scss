@@ -7,3 +7,10 @@
   text-align: center;
   width: 50%;
 }
+
+@media (max-width: 768px) {
+  .mainPosition {
+    margin: 0;
+    width: 100%;
+  }
+}

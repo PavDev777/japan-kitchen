@@ -19,4 +19,26 @@
   color: #6f6335;
   font-weight: bold;
   font-size: 18px;
+
+  @media (max-width: 320px) {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .listItem {
+    grid-template-columns: 1fr;
+    box-shadow: 3px 3px 11px 9px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+  }
+  .listItemSingle {
+    text-align: center;
+    border: none !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .listItem {
+    row-gap: 10px
+  }
 }

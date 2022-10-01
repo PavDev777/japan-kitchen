@@ -1,4 +1,3 @@
-import React from "react";
 import { TextPromo } from "./TextPromo";
 import { ListMeal } from "./ListMeal";
 

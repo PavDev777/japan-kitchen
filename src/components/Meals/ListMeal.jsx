@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./ListMeal.module.scss";
 import { ListItem } from "./ListItem";
 import { Card } from "../UI/Card";
+
+import styles from "./ListMeal.module.scss";
 
 const DUMMY_MEALS = [
   {
@@ -36,7 +37,7 @@ export const ListMeal = () => {
   return (
     <section className={styles.listMeal}>
       <Card>
-        <ul>
+        <ul className={styles.listMealUl}>
           {DUMMY_MEALS.map((item) => (
             <ListItem key={item.id} {...item} />
           ))}

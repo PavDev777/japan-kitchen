@@ -1,0 +1,30 @@
+.cartItems {
+  height: 40vh;
+  overflow-y: scroll;
+}
+
+.CartTotalItems {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.CartActions {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+
+.CartEmpty {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+

@@ -1,9 +1,13 @@
-import React from "react";
 import styles from "./Button.module.scss";
+import classNames from "classnames";
 
-export const Button = ({ children, type, className }) => {
+export const Button = ({ children, type, close, onClick }) => {
+  const classes = classNames([styles.button], {
+    [styles.closeButton]: close,
+  });
+
   return (
-    <button type={type || "button"} className={`${styles.button} ${className}`}>
+    <button onClick={onClick} type={type || "button"} className={classes}>
       {children}
     </button>
   );
